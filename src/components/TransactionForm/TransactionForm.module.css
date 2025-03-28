@@ -1,0 +1,61 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+
+  /* background-color: #202021; */
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  padding: 20px;
+
+  /* margin-top: 50px; */
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputWrapper {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  padding-left: 15px;
+
+  width: 100%;
+  height: 30px;
+
+  background-color: #3e3c3c;
+  color: aliceblue;
+}
+
+.radioWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.radioWrapperEl {
+  display: flex;
+}
+
+.error {
+  color: #b16f6f;
+}
+
+.modalBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  border: none;
+  outline: none;
+  background-color: #1976d2;
+
+  bottom: 10px;
+  right: 10px;
+
+  position: fixed;
+}

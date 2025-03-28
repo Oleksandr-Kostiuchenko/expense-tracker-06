@@ -1,0 +1,48 @@
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  border: 1px solid rgba(224, 232, 242, 0.6);
+  border-radius: 15px;
+  background-color: rgba(224, 232, 242, 0.6);
+
+  padding: 20px;
+
+  font-weight: 700;
+  font-size: 35;
+  color: #26273a;
+}
+
+.cardImg {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: transform 250ms linear;
+}
+
+.cardImg:hover {
+  transform: scale(1.05);
+}
+
+.balanceWrapper {
+  font-size: 35px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  gap: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.counterWrapper {
+  margin-bottom: 60px;
+}

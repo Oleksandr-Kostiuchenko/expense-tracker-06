@@ -1,0 +1,48 @@
+.trxWrapper {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.trxDataWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.deleteBtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.deleteIcon {
+  color: #f7f7f7;
+}
+
+.id {
+  font-size: 10px;
+  color: #8b8a8a;
+}

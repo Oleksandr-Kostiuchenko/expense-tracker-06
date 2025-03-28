@@ -41,10 +41,14 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /* background-image: url(/public/grainy.png); */
   /* box-shadow: inset 0px 0px 30px -8px rgb(20, 20, 20); */
-  color: #000;
+  /* color: #000; */
+
+  background-color: #1c1d20;
+  color: #fafafa;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
