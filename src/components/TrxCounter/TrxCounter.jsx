@@ -23,7 +23,7 @@ const TrxCounter = () => {
 
   return (
     <div className={style.counterWrapper}>
-      <img className={style.cardImg} src="../../../public/card.png" alt="" />
+      <img className={style.cardImg} src="./card.png" alt="" />
       <div className={style.infoWrapper}>
         <p className={style.balanceWrapper}>{transactionData.totalBalance}$</p>
         <div className={style.descriptionWrapper}>
