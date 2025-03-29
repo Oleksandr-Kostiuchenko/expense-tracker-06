@@ -1,6 +1,7 @@
 //* Style & libraries
 import style from "./TransactionForm.module.css";
 import { nanoid } from "nanoid";
+import toast, { Toaster } from "react-hot-toast";
 import { dateConstructor } from "../../redux/transactionsSlice";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
@@ -33,10 +34,13 @@ const TransactionForm = () => {
 
   const dispatch = useDispatch();
   const balanceData = useSelector((state) => state.expenses.totalBalance);
+  const transactionData = useSelector((state) => state.expenses.transactions);
 
   const handleSubmit = (values, actions) => {
     if (values.type === "expense" && balanceData < values.value) {
-      alert("Insufficent balance!");
+      toast("Insufficent funds!", {
+        icon: "❌",
+      });
       return;
     }
 
@@ -51,6 +55,22 @@ const TransactionForm = () => {
     );
 
     actions.resetForm();
+
+    if (values.type === "earning") {
+      if (transactionData.length === 0) {
+        toast("First successfull deposit!", {
+          icon: "💰",
+        });
+        return;
+      }
+      toast("Transaction added!", {
+        icon: "💵",
+      });
+    } else if (values.type === "expense") {
+      toast("Transaction added!", {
+        icon: "💸",
+      });
+    }
   };
 
   return (
@@ -118,6 +138,7 @@ const TransactionForm = () => {
         <IoIosMenu color="white" size={30} />
       </button>
       {modalIsOpen && <ModalNav setModalIsOpen={setModalIsOpen} />}
+      <Toaster position="bottom-center" reverseOrder={false} />
     </>
   );
 };

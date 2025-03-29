@@ -12,7 +12,7 @@ const AppBar = () => {
     <>
       <header className={style.headerWrapper}>
         <h1>
-          <FcMoneyTransfer size={25} />
+          <FcMoneyTransfer className={style.appIcon} />
           Money Tracker
         </h1>
         <div className={style.filterWrapper}>

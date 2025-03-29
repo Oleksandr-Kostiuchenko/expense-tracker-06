@@ -23,6 +23,12 @@
   transition: transform 250ms linear;
 }
 
+@media screen and (min-width: 768px) {
+  .cardImg {
+    width: 70%;
+  }
+}
+
 .cardImg:hover {
   transform: scale(1.05);
 }
@@ -32,7 +38,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .descriptionWrapper {
@@ -45,4 +51,22 @@
 
 .counterWrapper {
   margin-bottom: 60px;
+}
+
+.statsNum {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-style: italic;
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.positive {
+  color: #296e06;
+}
+
+.negative {
+  color: #6e2306;
 }
